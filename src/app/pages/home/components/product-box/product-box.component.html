@@ -16,9 +16,13 @@
 				<p *ngIf="fullWidthMode">{{product.description}}</p>
 			</div>
 			<div class="flex justify-between px-3">
-				<span class="text-teal-400">{{ product.price | currency }}</span>
+				<!-- <span>Price: </span> -->
+				<span class="font-bold">
+					Price: 
+					<span class="text-green-600">{{ product.price | currency }}</span>
+				</span>
 				<button (click)="onAddToCart()">
-					<mat-icon class="text-teal-400">shopping_cart</mat-icon>
+					<mat-icon class="text-pink-700">shopping_cart</mat-icon>
 				</button>
 			</div>
 		</div>

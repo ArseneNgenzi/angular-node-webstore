@@ -12,15 +12,16 @@ export class ProductsHeaderComponent {
 
 
 sort = 'desc'
-
 itemsShowCount:number = 12
 
 onSortUpdated(newSort: string):void {
   this.sort = newSort
+  this.sortChange.emit(newSort)
 }
 
 onItemsUpdated(count: number):void {
   this.itemsShowCount = count
+  this.itemsCountChange.emit(count)
 }
  
 onColumnsUpdated(colsNum: number):void {

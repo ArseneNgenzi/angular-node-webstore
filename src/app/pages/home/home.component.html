@@ -11,6 +11,8 @@
 	<mat-drawer-content class="p-6 h-full">
 		<app-products-header
 			(columnsCountChange)="onColumnsCountChange($event)"
+			(itemsCountChange)="onItemsCountChange($event)"
+			(sortChange)="onSortChange($event)"
 		></app-products-header>
 		<!-- {{cols}}
             {{category}} -->
@@ -19,12 +21,11 @@
 				<app-product-box
 					class="w-full"
 					[fullWidthMode]="cols === 1"
-                    [product] = 'product'
+					[product]="product"
 					(addToCart)="onAddToCart($event)"
 				></app-product-box>
 			</mat-grid-tile>
 		</mat-grid-list>
 	</mat-drawer-content>
 	<!-- <mat-drawer-container class="p-6"></mat-drawer-container> -->
-</mat-drawer-container> 
- 
+</mat-drawer-container>
