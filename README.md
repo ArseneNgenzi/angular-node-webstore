@@ -1,3 +1,6 @@
+
+![AngularNodeWebstore](https://github.com/ArseneNgenzi/angular-node-webstore/assets/56913264/bc04b9b9-9478-4c79-844b-02607de89245)
+
 # Store (Angular, Express & Stripe)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
